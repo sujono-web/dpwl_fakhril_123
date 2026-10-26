@@ -61,13 +61,12 @@ class Mobil_M extends Model
 
     public function UbahDtMobil($data)
     {
-        $a = $data['ft_depan'];
         $stmt = $this->db->prepare("UPDATE mobil SET nm_mobil = ?, nkursi = ?,
-                nbagasi = ?, jns_mobil = ?, transmisi = ?, thn_buat = ?, ft_depan = ?,
-                hrg_hari = ?, cttn_unit = ?, status_unit = ? WHERE no_plat = ?");
+                nbagasi = ?, jns_mobil = ?, transmisi = ?, thn_buat = ?, ft_depan = ?, ft_blkg=?,
+                ft_interior=?, hrg_hari = ?, cttn_unit = ?, status_unit = ? WHERE no_plat = ?");
 
         $stmt->bind_param(
-            "siissisdsss",
+            "siississsdsss",
             $data['nm_mobil'],
             $data['nkursi'],
             $data['nbagasi'],
@@ -75,6 +74,8 @@ class Mobil_M extends Model
             $data['transmisi'],
             $data['thn_buat'],
             $data['ft_depan'],
+            $data['ft_blkg'],
+            $data['ft_interior'],
             $data['hrg_hari'],
             $data['cttn_unit'],
             $data['status_unit'],

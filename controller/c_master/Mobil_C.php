@@ -228,4 +228,12 @@ class Mobil_C extends Controller
             echo "<script>alert('Data mobil gagal dihapus!');window.history.back();</script>";
         }
     }
+
+    public function keluar()
+    {
+        $this->session->unset_userdata('emailuser');
+        $this->session->set_flashdata('pesan', 'Berhasil Logout');
+        redirect('login_C/index');
+        exit;
+    }
 }

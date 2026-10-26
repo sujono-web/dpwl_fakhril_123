@@ -54,9 +54,9 @@
                                             <td><?= $m['nbagasi'] ?></td>
                                             <td><?= $m['jns_mobil'] . '/<br>' . $m['transmisi'] ?></td>
                                             <td><?= $m['thn_buat'] ?></td>
-                                            <td><img src="<?= base_url('img/' . $m['ft_depan']) ?>" style="width: 50px; height: auto;"><br>
-                                                <img src="<?= base_url('img/' . $m['ft_blkg']) ?>" style="width: 50px; height: auto;"><br>
-                                                <img src="<?= base_url('img/' . $m['ft_interior']) ?>" style="width: 50px; height: auto;">
+                                            <td><a href="<?= base_url('img/' . $m['ft_depan']) ?>" target="_blank"> <img src="<?= base_url('img/' . $m['ft_depan']) ?>" style="width: 50px; height: auto;"></a><br>
+                                                <a href="<?= base_url('img/' . $m['ft_blkg']) ?>" target="_blank"> <img src="<?= base_url('img/' . $m['ft_blkg']) ?>" style="width: 50px; height: auto;"></a><br>
+                                                <a href="<?= base_url('img/' . $m['ft_interior']) ?>" target="_blank"><img src="<?= base_url('img/' . $m['ft_interior']) ?>" style="width: 50px; height: auto;">
                                             </td>
                                             <td><?= $m['hrg_hari'] ?></td>
                                             <td><?= $m['cttn_unit'] ?></td>

@@ -112,11 +112,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="<?= base_url('mobil_C/keluar') ?>" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Logout
-                            <span class="right badge badge-danger">New</span>
                         </p>
                     </a>
                 </li>

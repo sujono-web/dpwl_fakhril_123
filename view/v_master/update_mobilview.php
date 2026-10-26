@@ -193,7 +193,9 @@
                                         Format JPG, JPEG atau PNG
                                     </small>
 
-                                    <input type="text" name="ft_depan_asli" value="<?= $mobil['ft_depan'] ?>">
+                                    <input type="text" name="ft_depan_asli" value="<?= $mobil['ft_depan'] ?>" hidden>
+                                    <input type="text" name="ft_blkg_asli" value="<?= $mobil['ft_blkg'] ?>" hidden>
+                                    <input type="text" name="ft_interior_asli" value="<?= $mobil['ft_interior'] ?>" hidden>
 
                                 </div>
                             </div>
